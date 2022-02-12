@@ -1,0 +1,478 @@
+
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;    
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url(../fonts/Helvetica.ttc);
+}
+
+@font-face {
+    font-family: "Cosi";
+    src: url(../fonts/Cosi.otf);
+}
+
+@font-face {
+    font-family: "Khmer";
+    src: url(../fonts/Khmer.ttf);
+}
+
+.header { grid-area: header; }
+.foto_main { grid-area: foto_main; }
+.foto_1 { grid-area: foto_1; }
+.foto_2 { grid-area: foto_2; }
+.portfolio_film { grid-area: portfolio_film; }
+.portfolio_1 { grid-area: portfolio_1; }
+.portfolio_2 { grid-area: portfolio_2; }
+.portfolio_3 { grid-area: portfolio_3; }
+.portfolio_4 { grid-area: portfolio_4; }
+.portfolio_5 { grid-area: portfolio_5; }
+.portfolio_6 { grid-area: portfolio_6; }
+.portfolio_7 { grid-area: portfolio_7; }
+.services_1 { grid-area: services_1; }
+.services_2 { grid-area: services_2; }
+.services_table { grid-area: services_table; }
+.aboutText { grid-area: about_text; }
+.aboutImg { grid-area: about_img; }
+.contact_img1 { grid-template: contact_img1; }
+.contact_img2 { grid-template: contact_img2; }
+.contact_form { grid-template: contact_form; }
+.footer { grid-area: footer; }
+
+.grid-home {
+  display: grid;
+  grid-template:
+    'header header'
+    'foto_main foto_main'
+    'foto_1 foto_2'
+    'footer footer';
+}
+
+.grid-portfolio {
+    display: grid;
+    grid-template: 
+    'header header'
+    'portfolio_film portfolio_film'
+    'portfolio_1 portfolio_2'
+    'portfolio_3 portfolio_4'
+    'portfolio_5 portfolio_6'
+    'portfolio_7 portfolio_7'
+    'footer footer';
+}
+
+.grid-services {
+    display: grid;
+    grid-template: 
+    'header header'
+    'services_1 services_2'
+    'services_table services_table'
+    'footer footer';
+}
+
+.grid-about {
+    display: grid;
+    grid-template: 
+    'header'
+    'about_img'
+    'about_text'
+    'footer';
+}
+
+.grid-contact {
+    display: grid;
+    grid-template:
+    'header header'
+    'contact_img1 contact_img2'
+    'contact_form contact_form'
+    'footer footer'
+}
+
+/* Header */
+
+header {
+    background-color: rgb(242, 242, 242);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul {
+    font-family: "Helvetica";
+    font-size: 15px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+nav ul a {
+    color: blue;
+    text-decoration: none;
+}
+
+.navLogo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.navMenu, .menuBurger {
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menuBurger {
+    justify-content:flex-end;
+    padding-right: 10px;
+    display: none;
+}
+
+/* Home */
+
+.textoPh1 {
+    font-family: "Cosi";
+    font-size:800%;
+    line-height: 0.75;
+}
+
+.textoPh2 {
+    font-family: "Helvetica";
+    font-size:800%;
+    line-height: 0.75;
+}
+
+.textoPh3 {
+    font-family: "Helvetica";
+    font-size:800%;
+    font-style: oblique;
+    line-height: 0.75;
+}
+
+.textoHome {
+    padding-top: 17%;
+    padding-left: 10px;
+    color: rgb(242,242,242);
+    z-index: 0;
+    position: fixed;
+}
+
+.foto_main, .portfolio_film, .about_img, .contact_img, .services_1, .services_2, .contact_img1, .contact_img2 {
+    line-height: 0px;
+    padding-top: 100px;
+}
+
+.foto_1, .foto_2, .portfolio_1, .portfolio_2, .portfolio_3, .portfolio_4, .portfolio_5, .portfolio_6 {
+    line-height: 0px;
+}
+
+/* Portfolio */
+
+.portfolio_7 {
+    padding: 5%;
+    line-height: 0px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.youTube {
+    height: 800px;
+    width: 100%;
+}
+
+/* Services */
+
+.services_table {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    padding: 20%;
+    position: fixed;
+    }
+
+table {
+    color: black;
+    background-color: rgb(242,242,242);
+    font-family: "Helvetica";
+    font-size: small;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+table th {
+    font-family: "Cosi";
+    font-size: large;
+    text-align: center;
+    align-items: center;
+    width: 150px;
+}
+
+table td {
+    padding: 5%;
+    text-align: center;
+}
+
+/* About Me */
+
+.about_text {
+    font-family: "Helvetica";
+    color:black;
+    background-color: rgb(242,242,242);
+    font-size: small;
+    text-align: center;
+    line-height: normal;
+    margin: 20%;
+    padding: 5%;
+    position: fixed;
+}
+
+/* Contact */
+
+form {
+    color: black;
+    font-family: "Helvetica";
+    font-size: small;
+    background-color: rgb(242, 242, 242);
+    padding: 5%;
+}
+
+form legend {
+    font-size: large;
+    font-family: "Cosi";
+  }
+
+.contact_form {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    justify-self: center;
+    padding-top: 17%;
+}
+
+.button1 {
+    background-color: lightgray;
+    color: rgb(242, 242, 242);
+    padding: 5%;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+}
+
+.button1:hover {
+    background-color:gray;
+    color: rgb(242, 242, 242);
+    padding: 5%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+
+.button2 {
+    background-color: blue;
+    color: rgb(242, 242, 242);
+    padding: 5%;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+}
+
+.button2:hover {
+    background-color: darkblue;
+    color: rgb(242, 242, 242);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 5%;
+    text-transform: uppercase;
+}
+
+.form_buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgb(0,38,255);
+    padding: 20px 40px;
+}
+
+footer ul {
+    font-family: "Helvetica";
+    color: rgb(242,242,242);
+    list-style-type: none;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 100%;
+    max-width: 400px;
+    margin: 0px auto;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+footer ul a {
+    color: rgb(242,242,242);
+    text-decoration: none;
+}
+
+footer p {
+    color: rgb(242,242,242);
+    font-family: "Helvetica";
+    font-size: x-small;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1450px) {
+    footer {
+        padding: 20px 0px;
+    }
+    .textoPh1, .textoPh2, .textoPh3 {
+        font-size: 500%;
+        line-height: 0.40;
+    }
+    .textoHome {
+        padding-top: 500px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .grid-home {
+    display: grid;
+    grid-template:
+        'header'
+        'foto_main'
+        'foto_1'
+        'foto_2'
+        'footer';
+    }
+    .grid-portfolio {
+    display: grid;
+    grid-template: 
+        'header'
+        'portfolio_film'
+        'portfolio_1'
+        'portfolio_2'
+        'portfolio_3'
+        'portfolio_4'
+        'portfolio_5'
+        'portfolio_6'
+        'portfolio_7'
+        'footer';
+    }
+    .grid-services {
+        display: grid;
+        grid-template: 
+        'header'
+        'services_1'
+        'services_2'
+        'services_table'
+        'footer';
+    }
+    .grid-contact {
+        display: grid;
+        grid-template:
+        'header'
+        'contact_img1'
+        'contact_img2'
+        'contact_form'
+        'footer'
+    }
+    .navMenu {
+        display: none;
+    }
+    .menuBurger {
+        display: flex;
+    }
+    .menuBurger img {
+        width: 20px;    
+    }
+    .textoPh1, .textoPh2, .textoPh3 {
+        font-size: 350%;
+        line-height: 0.40;
+    }
+    .textoHome {
+        padding-top: 500px;
+    }
+    .services_table {
+    padding: 40%;
+    }
+    .services_2 {
+        padding-top: 0px;
+    }
+    table td {
+    font-size: small;
+    }
+    footer ul {
+        font-size: medium;
+    }
+    .about_text {
+        font-size: medium;
+        text-align: center;
+        line-height: normal;
+        margin: 0px;
+        padding: 30% 10%;
+        position: inherit;
+    }
+    .contact_form {
+        padding-top: 300px;
+    }
+    .contact_img2 {
+        padding-top:0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .textoPh1, .textoPh2, .textoPh3 {
+        font-size: 190%;
+    }
+    .textoHome {
+        padding-top: 100%;
+    }
+    footer ul {
+        max-width: 300px;
+        font-size: small;
+    }
+    .youTube {
+        height: 700px;
+        width: 100%;
+    }
+    .services_table {
+        padding: 60%;
+    }
+    table td {
+        font-size: x-small;
+    }
+    table th {
+        font-size: medium;
+    }
+    table {
+        width: 200px;
+    }
+    .about_text {
+        font-size: small;
+        padding: 50% 20%;
+    }
+    .contact_form {
+        padding-top: 200px;
+    }
+}
