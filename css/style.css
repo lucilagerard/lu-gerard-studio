@@ -119,6 +119,12 @@ nav ul {
 nav ul a {
     color: blue;
     text-decoration: none;
+    display: block;
+}
+
+nav ul a:hover {
+    transform: scale(1.2);
+    font-family: "Cosi";
 }
 
 .navLogo {
@@ -167,6 +173,10 @@ nav ul a {
     color: rgb(242,242,242);
     z-index: 0;
     position: fixed;
+}
+
+.textoHome:hover {
+    color: orangered;
 }
 
 .foto_main, .portfolio_film, .about_img, .contact_img, .services_1, .services_2, .contact_img1, .contact_img2 {
@@ -241,6 +251,13 @@ table td {
     position: fixed;
 }
 
+.about_text:hover {
+    transform: skew(1deg);
+    transition: all 5s ease;
+    background-color: blue;
+    color: white;
+}
+
 /* Contact */
 
 form {
@@ -308,6 +325,10 @@ form legend {
 footer {
     background-color: rgb(0,38,255);
     padding: 20px 40px;
+}
+
+.footer:hover {
+    background-image: linear-gradient(to left, rgb(0,38,255), white);
 }
 
 footer ul {
