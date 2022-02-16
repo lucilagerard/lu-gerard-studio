@@ -1,72 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>lu gerard — studio</title>
-    <link rel="shortcut icon" href="../images/favicon.png">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
 
-<body>
-    <div class="grid-portfolio">
-
-        <!--Inicio Header-->
-        <header class="header">
-            <nav>
-                <div class="navLogo">
-                    <a href="../index.html"><img src="../images/logo.png" alt="navLogo"></a>
-                </div>
-                <div class="navMenu">
-                    <ul>
-                        <li><a href="portfolio.html">portfolio</a></li>
-                        <li><a href="services.html">services</a></li>
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="contact.html">contact</a></li>
-                    </ul>
-                </div>
-                <div class="menuBurger"><img src="../images/burger.png" alt="menuBurger"></div>
-            </nav>
-        </header>
-        <!--Fin Header-->
-
-        <!--Inicio Section Film-->
+  <!-- Inicio Section Film
         <div class="portfolio_film"><iframe class="youTube" title="rosa-copado" width="100%" 
             src="https://www.youtube.com/embed/TM-NdKpAnm4" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div> 
-        <!--Fin Section Film-->
-        
-        <!--Inicio Section Stills-->
-        <div class="portfolio_1"><img src="../images/portfolio1.png" alt="Cami1" width="100%" height="auto"></div>
-        <div class="portfolio_2"><img src="../images/portfolio2.png" alt="Cami2" width="100%" height="auto"></div>
-        <div class="portfolio_3"><img src="../images/portfolio3.png" alt="Elena1" width="100%" height="auto"></div>
-        <div class="portfolio_4"><img src="../images/portfolio4.png" alt="Elena2" width="100%" height="auto"></div>
-        <div class="portfolio_5"><img src="../images/portfolio5.png" alt="Amigas" width="100%" height="auto"></div>
-        <div class="portfolio_6"><img src="../images/portfolio6.png" alt="Anita1" width="100%" height="auto"></div>
-        <div class="portfolio_7">
-            <img src="../images/portfolio7.jpg" alt="Tomi1" width="100%" height="auto">
-        </div>
-        <!--Fin Section Stills-->
+    </div> -->
 
-        <!--Inicio Footer-->
-        <footer class="footer">
-            <div>
-                <ul>
-                    <li><a href="../index.html">home</a></li>
-                    <li><a href="portfolio.html">portfolio</a></li>
-                    <li><a href="services.html">services</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                </ul>
-                <p>copyright © 2022 all rights reserved</p>
+  <body>
+
+    <div class="container-fluid">
+
+    <!--Inicio Header Desktop -->
+      <header>
+        <nav class="navbar fixed-top">
+          <div class="navbar-desktop">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img
+                  src="../images/logo.png"
+                  alt="navLogo"
+                  width="auto"
+                  height="100px"
+                />
+              </a>
             </div>
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Fin Header Desktop -->
+          <!-- Inicio Header Mobile -->
+          <div class="navbar-mobile">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img
+                  src="../images/logo.png"
+                  alt="navLogo"
+                  width="auto"
+                  height="100px"
+                />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+              >
+                <img
+                  src="../images/burger.png"
+                  alt="menuBurger"
+                  height="40px"
+                  width="auto"
+                />
+              </button>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="portfolio.html"
+                        >portfolio</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="services.html"
+                        >services</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="about.html"
+                        >about</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="contact.html"
+                        >contact</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!--Fin Header Mobile -->
+
+        <!-- Inicio Portfolio -->
+        <div class="row">
+            <div class="col p-0">
+                <div class="portfolio_1"><img src="../images/portfolio1.png" alt="Cami1" width="100%" height="auto"></div>
+            </div>
+            <div class="col p-0">
+                <div class="portfolio_2"><img src="../images/portfolio2.png" alt="Cami2" width="100%" height="auto"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col p-0">
+                <div class="portfolio_3"><img src="../images/portfolio3.png" alt="Elena1" width="100%" height="auto"></div>
+            </div>
+            <div class="col p-0">
+                <div class="portfolio_4"><img src="../images/portfolio4.png" alt="Elena2" width="100%" height="auto"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col p-0">
+                <div class="portfolio_5"><img src="../images/portfolio5.png" alt="Amigas" width="100%" height="auto"></div>
+            </div>
+            <div class="col p-0">
+                <div class="portfolio_6"><img src="../images/portfolio6.png" alt="Anita1" width="100%" height="auto"></div>
+            </div>
+        </div>
+            <div class="col-rows-3">
+                <div class="portfolio_7"><img src="../images/portfolio7.jpg" alt="Tomi1" width="100%" height="auto"></div>
+            </div>
+        </div>
+        <!-- Fin Portfolio -->
+
+        <!-- Inicio Footer -->
+        <footer class="footer">
+        <div>
+         <ul>
+            <li><a href="../index.html">home</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+            <p>copyright © 2022 all rights reserved</p>
+        </div>
         </footer>
-        <!--Fin Footer-->
+        <!-- Fin Footer -->
 
     </div>
-</body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
 
 </html>
