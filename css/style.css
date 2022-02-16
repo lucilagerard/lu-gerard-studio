@@ -64,7 +64,7 @@ header {
 
 .offcanvas {
     width: 75%;
-    background-color: rgba(0,0,0,0.90);
+    background-color: rgb(242, 242, 242);
 }
 
 .navbar-toggler:focus {
@@ -77,22 +77,14 @@ header {
 
 .navbar-nav .nav-item .nav-link {
     font-size: xx-large;
-    color: rgb(242,242,242);
+    color: blue;
     line-height: 100px;
 }
 
-/*.navLogo {
-    display: flex;
-    justify-content: left;
-    align-items: center;
+.navbar ul {
+    align-items: flex-end;
+    width: 100%;
 }
-
-.navMenu, .menuBurger {
-    width: 50%;
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-}*/
 
 /* Home */
 
@@ -127,7 +119,7 @@ header {
     color: rgb(242, 242, 242);
     z-index: 0;
     position: fixed;
-    font-size: calc(0.1rem + 0.75vw);
+    font-size: calc(0.1rem + 0.60vw);
     transition: all 1s;
 }
 .h6:hover {
@@ -174,19 +166,37 @@ header {
 }
 
 .texto-bloque-serv-1 {
-    font-size: calc(6rem + 0.5vw);
     padding-top: 200px;
 }
 .texto-bloque-serv-2 {
-    font-size: calc(6rem + 0.5vw);
     padding-top: 400px;
 }
 .texto-bloque-serv-3 {
-    font-size: calc(6rem + 0.5vw);
     padding-top: 600px;
 }
 
+.texto-servicio {
+    font-size: calc(6rem + 0.5vw);
+}
+
 /* About Me */
+
+/*.about_text {
+    font-family: "Helvetica";
+    color:black;
+    background-color: rgb(242,242,242);
+    font-size: small;
+    text-align: center;
+    line-height: normal;
+    padding: 5% 10%;
+    position: fixed;
+    transition: all 3s ease;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    margin: 0px auto;
+    transform: translate(-50%,-50%);
+}*/
 
 .about_text {
     font-family: "Helvetica";
@@ -195,27 +205,25 @@ header {
     font-size: small;
     text-align: center;
     line-height: normal;
-    margin: 20%;
-    padding: 5%;
-    position: fixed;
-    transition: all 5s ease;
+    padding: 5% 10%;
+    transition: all 3s ease;
+    width: 100%;
 }
 
 .about_text:hover {
-    transform: skew(1deg);
-    transition: all 3s ease;
-    background-color: blue;
+    background-color: black;
     color: white;
 }
 
 /* Contact */
 
-.form {
+form {
     color: black;
     font-family: "Helvetica";
     font-size: small;
     background-color: rgb(242, 242, 242);
     padding: 10px 40px;
+    margin: 50px auto;
     width: 50%;
 }
 
@@ -229,48 +237,14 @@ header {
     font-family: "Cosi";
 }
 
-/*.contact_form {
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    justify-self: center;
-    padding-top: 17%;
-}
-
-.button1 {
-    background-color: lightgray;
-    color: rgb(242, 242, 242);
-    padding: 5%;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 10px;
-}
-
-.button1:hover {
-    background-color:gray;
-    color: rgb(242, 242, 242);
-    padding: 5%;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    text-transform: uppercase;
-}
-
-.button2 {
+.btn-primary {
     background-color: blue;
-    color: rgb(242, 242, 242);
-    padding: 5%;
-    text-transform: uppercase;
     border: none;
-    border-radius: 10px;
 }
 
-.button2:hover {
-    background-color: darkblue;
-    color: rgb(242, 242, 242);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    padding: 5%;
-    text-transform: uppercase;
+.contact-1, .contact-2 {
+    margin-top: 100px;
 }
-*/
 
 /* Footer */
 
@@ -332,8 +306,22 @@ footer p {
     .navbar-desktop {
         display: none;
     }
-    .contact-2 {
-        display: none;
+    .texto-bloque-serv-1 {
+        padding-top: 200px;
+    }
+    .texto-bloque-serv-2 {
+        padding-top: 400px;
+    }
+    .texto-bloque-serv-3 {
+        padding-top: 600px;
+    }
+    .texto-servicio {
+        font-size: calc(2.5rem + 0.5vw);
+    }
+    .about_text {
+        font-size: medium;
+        padding: 30%;
+        width: 100%;
     }
 }
 
@@ -348,15 +336,18 @@ footer p {
         font-size: medium;
     }
     .texto-bloque-serv-1 {
-        font-size: calc(0.5rem + 2vw);
         padding-top: 200px;
     }
     .texto-bloque-serv-2 {
-        font-size: calc(0.5rem + 2vw);
         padding-top: 400px;
     }
     .texto-bloque-serv-3 {
-        font-size: calc(0.5rem + 2vw);
         padding-top: 600px;
+    }
+    .texto-servicio {
+        font-size: calc(1rem + 0.5vw);
+    }
+    .about_text {
+        font-size: small;
     }
 }
