@@ -1,0 +1,102 @@
+$header-color: #f2f2f2;
+$main-color: blue;
+$secondary-color: white;
+$font-color: black;
+$main-font: "Helvetica";
+$secondary-font: "Cosi";
+
+@font-face {
+  font-family: "Helvetica";
+  src: url(../fonts/Helvetica.ttc);
+}
+
+@font-face {
+  font-family: "Cosi";
+  src: url(../fonts/Cosi.otf);
+}
+
+@font-face {
+  font-family: "Khmer";
+  src: url(../fonts/Khmer.ttf);
+}
+
+header {
+  background-color: $header-color;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 1;
+}
+
+.navbar-desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: 100%;
+}
+
+.navbar {
+  ul {
+    font-family: $main-font;
+    font-size: 15px;
+    list-style-type: none;
+    width: 70%;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.nav-item {
+  a {
+    color: $font-color;
+    text-decoration: none;
+    display: block;
+  }
+}
+
+.nav-item {
+  a:hover {
+    color: $font-color;
+    text-decoration: underline 3px $main-color;
+  }
+}
+
+footer {
+  background-color: $main-color;
+  padding: 20px 40px;
+  ul {
+    font-family: $main-font;
+    color: $header-color;
+    list-style-type: none;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 400px;
+    margin: 0px auto;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    a {
+      color: $header-color;
+      text-decoration: none;
+    }
+  }
+  ul {
+    a:hover {
+      color: $header-color;
+      text-decoration: underline $secondary-color;
+    }
+  }
+  p {
+    color: $secondary-color;
+    font-family: $main-font;
+    font-size: x-small;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}

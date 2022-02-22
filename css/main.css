@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url(../fonts/Helvetica.ttc); }
+
+@font-face {
+  font-family: "Cosi";
+  src: url(../fonts/Cosi.otf); }
+
+@font-face {
+  font-family: "Khmer";
+  src: url(../fonts/Khmer.ttf); }
+
+header {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 1; }
+
+.navbar-desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: 100%; }
+
+.navbar ul {
+  font-family: "Helvetica";
+  font-size: 15px;
+  list-style-type: none;
+  width: 70%;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-around; }
+
+.nav-item a {
+  color: black;
+  text-decoration: none;
+  display: block; }
+
+.nav-item a:hover {
+  color: black;
+  text-decoration: underline 3px blue; }
+
+footer {
+  background-color: blue;
+  padding: 20px 40px; }
+  footer ul {
+    font-family: "Helvetica";
+    color: #f2f2f2;
+    list-style-type: none;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 400px;
+    margin: 0px auto;
+    padding-bottom: 10px;
+    padding-top: 20px; }
+    footer ul a {
+      color: #f2f2f2;
+      text-decoration: none; }
+  footer ul a:hover {
+    color: #f2f2f2;
+    text-decoration: underline white; }
+  footer p {
+    color: white;
+    font-family: "Helvetica";
+    font-size: x-small;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px; }
