@@ -41,14 +41,9 @@ header {
   font-family: "Helvetica";
   font-size: 15px;
   list-style-type: none;
-  width: 70%;
   align-content: center;
-  align-items: center;
   display: flex;
   justify-content: space-around;
-}
-
-.navbar ul {
   align-items: flex-end;
   width: 100%;
 }

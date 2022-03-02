@@ -50,18 +50,11 @@ header {
     font-family: $main-font;
     font-size: 15px;
     list-style-type: none;
-    width: 70%;
     align-content: center;
-    align-items: center;
     display: flex;
     justify-content: space-around;
-  }
-}
-
-.navbar {
-  ul {
-  align-items: flex-end;
-  width: 100%;
+    align-items: flex-end;
+    width: 100%;
   }
 }
 
@@ -71,9 +64,6 @@ header {
     text-decoration: none;
     display: block;
   }
-}
-
-.nav-item {
   a:hover {
     color: $font-color;
     text-decoration: underline 3px $main-color;
