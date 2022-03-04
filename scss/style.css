@@ -127,24 +127,23 @@ header {
   color: orangered;
 }
 
-.foto_main, .portfolio_film, .about_img, .contact_img, .services_1, .services_2, .contact_img1, .contact_img2 {
+.foto_main, .portfolio_film, .about_img, .contact_img, .services_1, .services_2, .contact_img1, .contact_img2, .foto_1, .foto_2, .portfolio_1, .portfolio_2, .portfolio_3, .portfolio_4, .portfolio_5, .portfolio_6, .portfolio_7 {
   line-height: 0px;
-  padding-top: 100px;
 }
 
-.foto_1, .foto_2, .portfolio_1, .portfolio_2, .portfolio_3, .portfolio_4, .portfolio_5, .portfolio_6 {
-  line-height: 0px;
+.foto_main, .portfolio_film, .about_img, .contact_img, .services_1, .services_2, .contact_img1, .contact_img2 {
+  padding-top: 100px;
 }
 
 .portfolio_7 {
   padding: 5%;
-  line-height: 0px;
   display: flex;
   align-items: center;
   background-color: black;
 }
 
-.texto-bloque-serv-1, .texto-bloque-serv-2, .texto-bloque-serv-3 {
+.texto-bloque-serv-1 {
+  padding-top: 200px;
   position: fixed;
   width: 100%;
   display: flex;
@@ -156,16 +155,30 @@ header {
   text-decoration: underline solid 3px orangered;
 }
 
-.texto-bloque-serv-1 {
-  padding-top: 200px;
-}
-
 .texto-bloque-serv-2 {
   padding-top: 400px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 20px;
+  font-family: "Cosi";
+  color: #f2f2f2;
+  text-decoration: underline solid 3px orangered;
 }
 
 .texto-bloque-serv-3 {
   padding-top: 600px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 20px;
+  font-family: "Cosi";
+  color: #f2f2f2;
+  text-decoration: underline solid 3px orangered;
 }
 
 .texto-servicio {
@@ -209,9 +222,21 @@ form {
   font-family: "Cosi";
 }
 
-.btn-primary {
+.form-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.form-button .btn-primary {
+  margin-right: 10px;
   background-color: blue;
   border: none;
+}
+
+.form-button .btn-primary:hover {
+  background-color: black;
+  color: #f2f2f2;
 }
 
 .contact-1, .contact-2 {
@@ -316,5 +341,13 @@ footer p {
   }
   .about_text {
     font-size: small;
+  }
+  form {
+    padding: 10px 10px;
+    margin: 20px auto;
+    width: 75%;
+  }
+  .form-button .btn-primary {
+    font-size: x-small;
   }
 }
