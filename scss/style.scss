@@ -40,7 +40,7 @@ header {
   width: 100%;
   height: 100px;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
 }
 
 .navbar-desktop {
@@ -166,22 +166,22 @@ header {
 /*ESTO ES LO QUE AGREGUE*/
 
 .portfolio_0 {
-  background: url() no-repeat;
+  background: url("../images/portfolio0.jpg") no-repeat;
   background-size: contain;
 }
 
 .portfolio_0:hover {
-  background: url() no-repeat;
+  background: url("../images/portfolio0.gif") no-repeat;
   background-size: contain;
 }
 
 .portfolio_00 {
-  background: url() no-repeat;
+  background: url("../images/portfolio00.jpg") no-repeat;
   background-size: contain;
 }
 
 .portfolio_00:hover {
-  background: url() no-repeat;
+  background: url("../images/portfolio00.gif") no-repeat;
   background-size: contain;
 }
 
@@ -234,7 +234,7 @@ header {
 
 .texto-serv-2:hover {
   text-decoration: none;
-  color: map-get($colors, another-color);
+  color: map-get($colors, main-color);
 }
 
 .texto-serv-3 {
