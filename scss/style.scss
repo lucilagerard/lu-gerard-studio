@@ -151,7 +151,7 @@ header {
   padding-top: 100px;
 }
 
-.foto_1, .foto_2, .portfolio_1, .portfolio_2, .portfolio_3, .portfolio_4, .portfolio_5, .portfolio_6 {
+.foto_1, .foto_2, .portfolio_1, .portfolio_2, .portfolio_3, .portfolio_4, .portfolio_5, .portfolio_6, .portfolio_0, .portfolio_00 {
   @extend %portfolio;
 }
 
@@ -162,8 +162,6 @@ header {
   align-items: center;
   background-color: map-get($colors, font-color);
 }
-
-/*ESTO ES LO QUE AGREGUE*/
 
 .portfolio_0 {
   background: url("../images/portfolio0.jpg") no-repeat;
@@ -185,8 +183,6 @@ header {
   background-size: contain;
 }
 
-/*HASTA ACA*/
-
 @mixin texto-bloque-serv ($padding_top){
   padding-top: $padding_top;
   position: fixed;
@@ -197,7 +193,6 @@ header {
   padding-right: 20px;
   font-family: "Cosi";
   color: map-get($colors, header-color);
-  ;
   }
 
 .texto-bloque-serv-1 {
@@ -229,7 +224,7 @@ header {
 }
 
 .texto-serv-2 {
-  text-decoration: underline solid 4px map-get($colors, main-color);
+  text-decoration: underline solid 4px map-get($colors, another-color);
 }
 
 .texto-serv-2:hover {

@@ -127,7 +127,7 @@ header {
   color: orangered;
 }
 
-.foto_main, .portfolio_film, .about_img, .contact_img, .services_1, .services_2, .contact_img1, .contact_img2, .foto_1, .foto_2, .portfolio_1, .portfolio_2, .portfolio_3, .portfolio_4, .portfolio_5, .portfolio_6, .portfolio_7 {
+.foto_main, .portfolio_film, .about_img, .contact_img, .services_1, .services_2, .contact_img1, .contact_img2, .foto_1, .foto_2, .portfolio_1, .portfolio_2, .portfolio_3, .portfolio_4, .portfolio_5, .portfolio_6, .portfolio_0, .portfolio_00, .portfolio_7 {
   line-height: 0px;
 }
 
@@ -142,7 +142,6 @@ header {
   background-color: black;
 }
 
-/*ESTO ES LO QUE AGREGUE*/
 .portfolio_0 {
   background: url("../images/portfolio0.jpg") no-repeat;
   background-size: contain;
@@ -163,7 +162,6 @@ header {
   background-size: contain;
 }
 
-/*HASTA ACA*/
 .texto-bloque-serv-1 {
   padding-top: 200px;
   position: fixed;
@@ -219,7 +217,7 @@ header {
 }
 
 .texto-serv-2 {
-  text-decoration: underline solid 4px blue;
+  text-decoration: underline solid 4px orangered;
 }
 
 .texto-serv-2:hover {
