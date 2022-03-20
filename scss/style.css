@@ -142,6 +142,28 @@ header {
   background-color: black;
 }
 
+/*ESTO ES LO QUE AGREGUE*/
+.portfolio_0 {
+  background: url() no-repeat;
+  background-size: contain;
+}
+
+.portfolio_0:hover {
+  background: url() no-repeat;
+  background-size: contain;
+}
+
+.portfolio_00 {
+  background: url() no-repeat;
+  background-size: contain;
+}
+
+.portfolio_00:hover {
+  background: url() no-repeat;
+  background-size: contain;
+}
+
+/*HASTA ACA*/
 .texto-bloque-serv-1 {
   padding-top: 200px;
   position: fixed;
@@ -197,7 +219,7 @@ header {
 }
 
 .texto-serv-2 {
-  text-decoration: underline solid 5px blue;
+  text-decoration: underline solid 4px blue;
 }
 
 .texto-serv-2:hover {

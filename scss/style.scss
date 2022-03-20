@@ -163,6 +163,30 @@ header {
   background-color: map-get($colors, font-color);
 }
 
+/*ESTO ES LO QUE AGREGUE*/
+
+.portfolio_0 {
+  background: url() no-repeat;
+  background-size: contain;
+}
+
+.portfolio_0:hover {
+  background: url() no-repeat;
+  background-size: contain;
+}
+
+.portfolio_00 {
+  background: url() no-repeat;
+  background-size: contain;
+}
+
+.portfolio_00:hover {
+  background: url() no-repeat;
+  background-size: contain;
+}
+
+/*HASTA ACA*/
+
 @mixin texto-bloque-serv ($padding_top){
   padding-top: $padding_top;
   position: fixed;
@@ -205,7 +229,7 @@ header {
 }
 
 .texto-serv-2 {
-  text-decoration: underline solid 5px map-get($colors, main-color);
+  text-decoration: underline solid 4px map-get($colors, main-color);
 }
 
 .texto-serv-2:hover {
