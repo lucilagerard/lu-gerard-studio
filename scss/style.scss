@@ -177,13 +177,16 @@ header {
   }
 
 .texto-bloque-serv-1 {
-  @include texto-bloque-serv(200px)
+  @include texto-bloque-serv(200px);
+  z-index: 3;
 }
 .texto-bloque-serv-2 {
-  @include texto-bloque-serv(300px)
+  @include texto-bloque-serv(300px);
+  z-index: 2;
 }
 .texto-bloque-serv-3 {
-  @include texto-bloque-serv(500px)
+  @include texto-bloque-serv(500px);
+  z-index: 1;
 }
 
 .texto-servicio {
@@ -202,7 +205,7 @@ header {
 }
 
 .texto-serv-2 {
-  text-decoration: underline solid 5px map-get($colors, font-color);
+  text-decoration: underline solid 5px map-get($colors, main-color);
 }
 
 .texto-serv-2:hover {

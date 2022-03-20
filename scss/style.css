@@ -152,6 +152,7 @@ header {
   padding-right: 20px;
   font-family: "Cosi";
   color: #f2f2f2;
+  z-index: 3;
 }
 
 .texto-bloque-serv-2 {
@@ -164,6 +165,7 @@ header {
   padding-right: 20px;
   font-family: "Cosi";
   color: #f2f2f2;
+  z-index: 2;
 }
 
 .texto-bloque-serv-3 {
@@ -176,6 +178,7 @@ header {
   padding-right: 20px;
   font-family: "Cosi";
   color: #f2f2f2;
+  z-index: 1;
 }
 
 .texto-servicio {
@@ -194,7 +197,7 @@ header {
 }
 
 .texto-serv-2 {
-  text-decoration: underline solid 5px black;
+  text-decoration: underline solid 5px blue;
 }
 
 .texto-serv-2:hover {
