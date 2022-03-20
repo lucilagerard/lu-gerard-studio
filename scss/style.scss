@@ -146,7 +146,7 @@ header {
   line-height: 0px;
 }
 
-.foto_main, .portfolio_film, .about_img, .contact_img, .services_1, .services_2, .contact_img1, .contact_img2 {
+.foto_main, .about_img, .contact_img, .services_1, .services_2, .contact_img1, .contact_img2 {
   @extend %portfolio;
   padding-top: 100px;
 }
@@ -172,6 +172,7 @@ header {
 .portfolio_0:hover {
   background: url("../images/portfolio0.gif") no-repeat;
   background-size: contain;
+  background-color: grey;
 }
 
 .portfolio_00 {
@@ -183,6 +184,7 @@ header {
 .portfolio_00:hover {
   background: url("../images/portfolio00.gif") no-repeat;
   background-size: contain;
+  background-color: grey;
 }
 
 @mixin texto-bloque-serv ($padding_top){
